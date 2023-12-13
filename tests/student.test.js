@@ -20,7 +20,7 @@ test('Crea "Student" y registra asistencias', () => {
   studentsList.push(student);
   const inputData = {
     name: 'Jarjar',
-    day: '1',
+    dayOfWeek: '1',
     startTime: '10:00',
     endTime: '12:00',
   };
@@ -38,13 +38,13 @@ test('Crea "Student" y registra asistencias para varios dias', () => {
   studentsList.push(student);
   const inputData1 = {
     name: 'Leia',
-    day: '1',
+    dayOfWeek: '1',
     startTime: '09:00',
     endTime: '11:00',
   };
   const inputData2 = {
     name: 'Leia',
-    day: '3',
+    dayOfWeek: '3',
     startTime: '14:00',
     endTime: '14:02',
   };
@@ -52,7 +52,7 @@ test('Crea "Student" y registra asistencias para varios dias', () => {
   registerAttendance(inputData1, studentsList);
   registerAttendance(inputData2, studentsList);
 
-  expect(student.quantityOfDaysAssisted).toBe(2);
-  expect(student.daysAssisted).toEqual(['1', '3']);
+  expect(student.quantityOfDaysAssisted).toBe(1);
+  expect(student.daysAssisted).toEqual(['1']);
   expect(student.totalMinutesPresent).toBe(120);
 });

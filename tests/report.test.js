@@ -15,7 +15,7 @@ test('Generar informe para estudiantes con minutos presentes', () => {
   // Comprueba la salida esperada
   expect(mockLog).toHaveBeenCalledWith('Charlie: 180 minutes in 3 days');
   expect(mockLog).toHaveBeenCalledWith('Rigoberto: 120 minutes in 2 days');
-  expect(mockLog).toHaveBeenCalledWith('Alfonso: 90 minutes in 1 days');
+  expect(mockLog).toHaveBeenCalledWith('Alfonso: 90 minutes in 1 day');
 
   // Restaura la implementación original de console.log
   mockLog.mockRestore();

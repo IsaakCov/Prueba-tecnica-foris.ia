@@ -13,9 +13,16 @@ function generateReport(studentsList) {
   // Imprime los registros en el formato especificado y devuelve la lista ordenada
   sortedStudentsList.forEach((student) => {
     if (student.totalMinutesPresent > 0) {
-      console.log(
-        `${student.name}: ${student.totalMinutesPresent} minutes in ${student.quantityOfDaysAssisted} days`
-      );
+      if (student.quantityOfDaysAssisted == 1) {
+        console.log(
+          `${student.name}: ${student.totalMinutesPresent} minutes in ${student.quantityOfDaysAssisted} day`
+        );
+      }
+      else{
+        console.log(
+          `${student.name}: ${student.totalMinutesPresent} minutes in ${student.quantityOfDaysAssisted} days`
+        );
+      }
     } else if (student.name != undefined) {
       console.log(`${student.name}: ${student.totalMinutesPresent} minutes`);
     }

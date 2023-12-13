@@ -1,18 +1,3 @@
-// Recibe el archivo mediante el directorio local especificando la ruta y anidando en una variable
-
-// Llama a la función para generar la lectura del archivo readFile
-
-//Crea un array para introducir los json que seran los datos de los estudiantes
-
-// Iteramos sobre cada uno de los elementos del array y los anida en una variable
-
-// Llama a la función verifyCommand, si es para registrar al alumno o los ingresos de este.
-
-// Si devuelve "Student", llama a createStudentReport, si es Present llama a la funcion registerAttendance
-
-// Una vez que haya terminado de iterar, generamos el reporte con los datos obtenidos con la funcion generateReport
-// index.js
-
 const { readFile } = require("./utils/readFile");
 const { getInputData } = require("./utils/getInputData");
 const { createStudentRecord } = require("./utils/createStudentRecord");
