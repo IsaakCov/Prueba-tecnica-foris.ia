@@ -1,3 +1,7 @@
+Para ejecutar el proyecto primero instalar las librerías con npm install. Para ejecutar el archivo ejecutar el siguiente comando en terminal:
+
+node index.js tu-archivo.txt
+
 ¡Hola!, me alegra mucho que estén leyendo este documento porque quiere decir que recibieron mi código. En este detallaré, según lo solicitado, el razonamiento detrás de las decisiones tomadas en el desarrollo del problema. Espero la extensión no sea un problema, intenté que no faltara nada.
 
 Detalles a tener en cuenta antes de empezar a hacer el código:
